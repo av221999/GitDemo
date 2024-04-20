@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="4" passed="3" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-04-06T12:19:20 IST" name="Default suite" finished-at="2024-04-06T12:20:14 IST" duration-ms="53890">
+    <groups>
+    </groups>
+    <test started-at="2024-04-06T12:19:20 IST" name="Default test" finished-at="2024-04-06T12:20:14 IST" duration-ms="53890">
+      <class name="irctc.tests.T01_TestNavigationToIRCTC">
+        <test-method is-config="true" signature="afterSuit()[pri:0, instance:irctc.tests.T01_TestNavigationToIRCTC@740cae06]" started-at="2024-04-06T12:19:20 IST" name="afterSuit" finished-at="2024-04-06T12:19:20 IST" duration-ms="19" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterSuit -->
+        <test-method is-config="true" signature="beforeTest()[pri:0, instance:irctc.tests.T01_TestNavigationToIRCTC@740cae06]" started-at="2024-04-06T12:19:20 IST" name="beforeTest" finished-at="2024-04-06T12:19:20 IST" duration-ms="100" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method is-config="true" signature="setDriver()[pri:0, instance:irctc.tests.T01_TestNavigationToIRCTC@740cae06]" started-at="2024-04-06T12:19:20 IST" name="setDriver" finished-at="2024-04-06T12:19:22 IST" duration-ms="2061" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setDriver -->
+        <test-method is-config="true" signature="beforeMethod(org.testng.ITestResult)[pri:0, instance:irctc.tests.T01_TestNavigationToIRCTC@740cae06]" started-at="2024-04-06T12:19:22 IST" name="beforeMethod" finished-at="2024-04-06T12:19:22 IST" duration-ms="5" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name={null} status=CREATED method=T01_TestNavigationToIRCTC.testPassing()[pri:0, instance:irctc.tests.T01_TestNavigationToIRCTC@740cae06] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="testPassing()[pri:0, instance:irctc.tests.T01_TestNavigationToIRCTC@740cae06]" started-at="2024-04-06T12:19:22 IST" name="testPassing" finished-at="2024-04-06T12:19:22 IST" duration-ms="5" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testPassing -->
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:irctc.tests.T01_TestNavigationToIRCTC@740cae06]" started-at="2024-04-06T12:19:22 IST" name="afterMethod" finished-at="2024-04-06T12:19:22 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testPassing status=SUCCESS method=T01_TestNavigationToIRCTC.testPassing()[pri:0, instance:irctc.tests.T01_TestNavigationToIRCTC@740cae06] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method signature="valuesInputIRCTC(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.time.LocalDate)[pri:0, instance:irctc.tests.T01_TestNavigationToIRCTC@740cae06]" started-at="2024-04-06T12:19:23 IST" name="valuesInputIRCTC" data-provider="dataToInput" finished-at="2024-04-06T12:19:39 IST" duration-ms="16503" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[NDLS]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[CSMT]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[AC First Class (1A) ]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[PREMIUM TATKAL]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[2024-04-05]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [Fri, 05 Apr 2024] but found [Sat, 06 Apr 2024]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [Fri, 05 Apr 2024] but found [Sat, 06 Apr 2024]
+at org.testng.Assert.fail(Assert.java:110)
+at org.testng.Assert.failNotEquals(Assert.java:1577)
+at org.testng.Assert.assertEqualsImpl(Assert.java:149)
+at org.testng.Assert.assertEquals(Assert.java:131)
+at org.testng.Assert.assertEquals(Assert.java:655)
+at org.testng.Assert.assertEquals(Assert.java:665)
+at irctc.pages.IRCTC_TrainsList.dateValidation(IRCTC_TrainsList.java:169)
+at irctc.pages.IRCTC_TrainsList.validateEnteredDate(IRCTC_TrainsList.java:181)
+at irctc.tests.T01_TestNavigationToIRCTC.valuesInputIRCTC(T01_TestNavigationToIRCTC.java:78)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- valuesInputIRCTC -->
+        <test-method is-config="true" signature="beforeMethod(org.testng.ITestResult)[pri:0, instance:irctc.tests.T01_TestNavigationToIRCTC@740cae06]" started-at="2024-04-06T12:19:23 IST" name="beforeMethod" finished-at="2024-04-06T12:19:23 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name={null} status=CREATED method=T01_TestNavigationToIRCTC.valuesInputIRCTC(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.time.LocalDate)[pri:0, instance:irctc.tests.T01_TestNavigationToIRCTC@740cae06] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:irctc.tests.T01_TestNavigationToIRCTC@740cae06]" started-at="2024-04-06T12:19:39 IST" name="afterMethod" finished-at="2024-04-06T12:19:40 IST" duration-ms="347" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=valuesInputIRCTC status=FAILURE method=T01_TestNavigationToIRCTC.valuesInputIRCTC(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.time.LocalDate)[pri:0, instance:irctc.tests.T01_TestNavigationToIRCTC@740cae06] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method signature="valuesInputIRCTC(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.time.LocalDate)[pri:0, instance:irctc.tests.T01_TestNavigationToIRCTC@740cae06]" started-at="2024-04-06T12:19:40 IST" name="valuesInputIRCTC" data-provider="dataToInput" finished-at="2024-04-06T12:20:02 IST" duration-ms="22428" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[CSMT ]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[INDB]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[AC First Class (1A) ]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[GENERAL]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[2024-05-30]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- valuesInputIRCTC -->
+        <test-method is-config="true" signature="beforeMethod(org.testng.ITestResult)[pri:0, instance:irctc.tests.T01_TestNavigationToIRCTC@740cae06]" started-at="2024-04-06T12:19:40 IST" name="beforeMethod" finished-at="2024-04-06T12:19:40 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name={null} status=CREATED method=T01_TestNavigationToIRCTC.valuesInputIRCTC(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.time.LocalDate)[pri:0, instance:irctc.tests.T01_TestNavigationToIRCTC@740cae06] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:irctc.tests.T01_TestNavigationToIRCTC@740cae06]" started-at="2024-04-06T12:20:02 IST" name="afterMethod" finished-at="2024-04-06T12:20:02 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=valuesInputIRCTC status=SUCCESS method=T01_TestNavigationToIRCTC.valuesInputIRCTC(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.time.LocalDate)[pri:0, instance:irctc.tests.T01_TestNavigationToIRCTC@740cae06] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="beforeMethod(org.testng.ITestResult)[pri:0, instance:irctc.tests.T01_TestNavigationToIRCTC@740cae06]" started-at="2024-04-06T12:20:02 IST" name="beforeMethod" finished-at="2024-04-06T12:20:02 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name={null} status=CREATED method=T01_TestNavigationToIRCTC.valuesInputIRCTC(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.time.LocalDate)[pri:0, instance:irctc.tests.T01_TestNavigationToIRCTC@740cae06] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="valuesInputIRCTC(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.time.LocalDate)[pri:0, instance:irctc.tests.T01_TestNavigationToIRCTC@740cae06]" started-at="2024-04-06T12:20:02 IST" name="valuesInputIRCTC" data-provider="dataToInput" finished-at="2024-04-06T12:20:14 IST" duration-ms="11745" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[JBP]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[INDB]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[AC First Class (1A) ]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[TATKAL]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[2024-04-06]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- valuesInputIRCTC -->
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:irctc.tests.T01_TestNavigationToIRCTC@740cae06]" started-at="2024-04-06T12:20:14 IST" name="afterMethod" finished-at="2024-04-06T12:20:14 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=valuesInputIRCTC status=SUCCESS method=T01_TestNavigationToIRCTC.valuesInputIRCTC(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.time.LocalDate)[pri:0, instance:irctc.tests.T01_TestNavigationToIRCTC@740cae06] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:irctc.tests.T01_TestNavigationToIRCTC@740cae06]" started-at="2024-04-06T12:20:14 IST" name="afterTest" finished-at="2024-04-06T12:20:14 IST" duration-ms="300" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+      </class> <!-- irctc.tests.T01_TestNavigationToIRCTC -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
