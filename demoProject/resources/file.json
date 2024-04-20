@@ -1,0 +1,16 @@
+{
+    "location": {
+        "lat": 22.759414,
+        "lng": 75.873694
+    },
+    "accuracy": 50,
+    "name": "Amit Kumar Vishwakarma",
+    "phone_number": "(+91) 7000667310",
+    "address": "E-115/2, LavKush Vihar Sukhlia, Indore",
+    "types": [
+        "shoe park",
+        "shop"
+    ],
+    "website": "http://rahulshettyacademy.com",
+    "language": "English-IN"
+}
